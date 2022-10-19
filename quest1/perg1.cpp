@@ -1,0 +1,44 @@
+// Programa: medianotas.cpp
+// Programador: Arthur Nagase Machado
+// Data:  03/08/2022
+// Este programa calcula a média final de um aluno para
+// um curso com o total de três provas e dois trabalhos. As
+// provas compõe 75% da nota da prova e os trabalhos 25%.
+// Declaração das bibliotecas utilizadas
+#include<stdio.h> // printf, scanf
+
+// inicio da função principal
+int main() {
+// Declaração das Variáveis locais
+double prova1;            // nota primeira prova
+double prova2;            // nota segunda prova
+double prova3;            // nota terceira prova
+double mediaProvas;       // média das notas das provas
+double trabalho1;         // nota do trabalho 1
+double trabalho2;         // nota do trabalho 2
+double mediaTrabalhos;    // média das notas dos trabalhos
+double mediaFinal;        // porcentagem total da nota
+
+// Escaneie as notas
+  scanf("%lf%lf%lf%lf%lf", &prova1, &prova2, &prova3, &trabalho1, &trabalho2);
+
+// Calcule as medias
+  mediaTrabalhos = (trabalho1 + trabalho2) / 2;
+  mediaProvas = (prova1 + prova2 + prova3) / 3;
+  mediaFinal = (mediaProvas * 0.75 + mediaTrabalhos * 0.25);
+  
+// Imprima os resultados
+   printf("======= NOTAS ========\n");
+   printf("Primeira Prova    %4.1f\n", prova1);
+   printf("Segunda Prova     %4.1f\n", prova2);
+   printf("Terceira Prova    %4.1f\n", prova3);
+   printf("Média Provas      %4.1f\n\n", mediaProvas);
+   printf("Primeiro Trabalho %4.1f\n", trabalho1);
+   printf("Segundo Trabalho  %4.1f\n", trabalho2);
+   printf("Média Trabalhos   %4.1f\n", mediaTrabalhos);
+   printf("----------------------\n");
+   printf("Média Final       %4.1f\n", mediaFinal);
+
+   return 0;
+
+} // fim da função principal

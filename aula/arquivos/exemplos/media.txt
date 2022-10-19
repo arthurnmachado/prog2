@@ -1,0 +1,10 @@
+Ana 5.00
+Joao 5.50
+Ana 7.75
+Camila 7.30
+Pedro 8.00
+Joao 5.50
+Ana 7.75
+Camila 7.30
+Pedro 8.00
+Ana 5.00
